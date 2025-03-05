@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre de la page -->
+    <title>Location de voiture</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut icon" href="./logo voiture.jpeg" />
+  </head>
+  <body>
+    <header>
+<!-- menu responsive -->
+
+<div class="menu_toggle">
+  <span></span>
+</div>
+      <div class="logo">
+        <p><span>Bienvenue chez </span>FKGV</p>
+      </div>
+      <ul class="menu">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#véhicules">Offres</a></li>
+        <li><a href="#services">Assistance</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="call">call</button>
+    </header>
+    <!-- section Acceuil -->
+     
+    <section id="home">
+      <div class="left">
+          <h1>Louez facilement <span>le véhicule</span> qui vous accompagne dans tous vos projets </h1>
+          <p>Bienvenue chez FKGV, votre solution de location de véhicules pratique et accessible. Découvrez notre large gamme de véhicules adaptés à vos besoins : voyages, déplacements personnel ou déplacements professionnels </p>
+          <a href="#">RRESERVEZ MAINTENANT</a>
+      </div>
+      <div class="right">
+          <img src="./images.jpeg">
+      </div>
+    </section>
+
+<!-- section vehicule -->
+
+<section id="véhicules">
+  <h1 class="section_title">Nos véhicules</h1>
+  <div class="images">
+    <ul>
+      <li class="véhicule">
+        <div>
+          <img src="./images (2).jpeg"alt="Image section">
+        </div>
+        <span>Citadines</span>
+        <span class="prix">300.000$</span>
+        <a href="#">RESERVEZ MAINTENANT</a>
+      </li>
+      <li class="vehicule">
+        <div>
+          <img src="./images (4).jpeg" alt="Image section">
+        </div>
+        <span>Déplacement familiales</span>
+        <span class="prix">236.000$</span>
+        <a href="#">RESERVEZ MAINTENANT</a>
+      </li>
+      <li class="véhicule">
+        <div>
+          <img src="./images (5).jpeg" alt="Image section">
+        </div>
+        <span>Véhicules de luxe</span>
+        <span class="prix">500.000$</span>
+        <a href="#">RESERVEZ MAINTENANT</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- section services -->
+
+<section id="services">
+  <h1 class="section_title">Assistance</h1>
+  <div class="list_services">
+  <div class="service">
+    <i class="fa-solid fa-screwdriver-wrench"></i>
+    <h3>Location de véhicules courte et longue durée</h3>
+    <p>Une large gamme de véhicules adaptés à tous vos besoins : citadines et voitures de luxe.</p>
+    <a href="#" class="read_more">Lire Plus</a>
+  </div>
+  <div class="service">
+    <i class="fa-solid fa-screwdriver-wrench"></i>
+    <h3>Véhicules pour toutes les occasions</h3>
+    <p>Voyages en famille : Confort et espace avec nos SUV et monospaces.</p>
+    <p>Déménagements : Véhicules utilitaires pratiques et économiques.</p>
+    <p>Occasions spéciales : Louez des voitures de luxe pour vos événements.</p>
+      <a href="#" class="read_more">Lire Plus</a>
+  </div>
+  <div class="service">
+    <i class="fa-solid fa-screwdriver-wrench"></i>
+    <h3>Options personnalisées</h3>
+    <p>Sièges bébé : Idéal pour les familles.
+      GPS intégré : Simplifiez vos trajets.
+      Assurance complémentaire : Roulez en toute tranquillité.</p>
+    <a href="#" class="read_more">Lire Plus</a>
+  </div>
+  </div>
+</section>
+  
+
+  <!-- section contact -->
+
+  <section id="contact">
+      <h1 class="section_title">Contact</h1>
+      <div class="localisation_contact_div">
+          <div class="localisation">
+              <h3>Notre Adresse</h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126874.98185432945!2d2.148884443359382!3d6.414189999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1024a79124613bed%3A0x876c991f1cbab133!2sl&#39;Envol!5e0!3m2!1sfr!2sbj!4v1738051034673!5m2!1sfr!2sbj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+
+          <div class="form_contact">
+              <h3>Envoyer un message</h3>
+              <form action="#">
+                  <input type="text"placeholder="Nom">
+                  <input type="email"placeholder="Adresse Mail">
+                  <input type="text"placeholder="Objet">
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                  <input type="submit" value="Envoyer">
+              </form>
+          </div>
+      </div>
+  </section>
+
+
+  <footer>
+      <p>Falilath KORA GUERRA </p>
+  </footer>
+
+  <script>
+      //menu responsive code JS
+
+      var menu_toggle = document.querySelector('.menu_toggle');
+      var menu = document.querySelector('.menu');
+      var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+      menu_toggle.onclick = function(){
+          menu_toggle.classList.toggle('active');
+          menu_toggle_span.classList.toggle('active');
+          menu.classList.toggle('responsive') ;
+      }
+
+  </script>
+</body>
+</html>
